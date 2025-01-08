@@ -65,7 +65,11 @@
           Margin="10 2 10 10"
           ItemsSource="{Binding Students}"
           SelectedItem="{Binding SelectedStudent}"
-        />
+          >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Vezetéknév" Width="75" Binding="{Binding LastName}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </UserControl>
 
